@@ -1,0 +1,47 @@
+<%= form_for @competency_check do |f| %>
+  <p>
+    <%= f.label :ground_or_taxi, '1. Ground and/or Air Taxi' %>
+    <%= f.select :ground_or_taxi, ['S', 'U', 'N/A']%>
+  </p>
+  <p>
+    <%= f.label :hovering_manuevers, '2. Hovering Manuevers' %>
+    <%= f.select :hovering_manuevers, ['S', 'U', 'N/A']%>
+  </p>
+  <p>
+    <%= f.label :landings, '3. Normal & Crosswind T.O. & Landings ' %>
+    <%= f.select :landings, ['S', 'U', 'N/A']%>
+  </p>
+  <p>
+    <%= f.label :high_alt_ops, '4. High Altitude Takeoffs & Landings' %>
+    <%= f.select :high_alt_ops, ['S', 'U', 'N/A']%>
+  </p>
+  <p>
+    <%= f.label :sim_eng_failure, '5. Sim. Engine Failure' %>
+    <%= f.select :sim_eng_failure, ['S', 'U', 'N/A']%>
+  </p>
+  <p>
+    <%= f.label :confined_area_slope_pinnacle, '6. Confied Area, Slopes, & Pinnacles' %>
+    <%= f.select :confined_area_slope_pinnacle, ['S', 'U', 'N/A']%>
+  </p>
+  <p>
+    <%= f.label :rapid_decel, '7. Rapid Deceleration' %>
+    <%= f.select :rapid_decel, ['S', 'U', 'N/A']%>
+  </p>
+  <p>
+    <%= f.label :autorotations, '8. Autorotations'  %>
+    <%= f.select :autorotations, ['S', 'U', 'N/A']%>
+  </p>
+  <p>
+    <%= f.label :hovering_autos, '9. Hovering Autorotations' %>
+    <%= f.select :hovering_autos, ['S', 'U', 'N/A']%>
+  </p>
+  <p>
+    <%= f.label :tr_failures, '10. Tail Rotor Failures (Oral)' %>
+    <%= f.select :tr_failures, ['S', 'U', 'N/A']%>
+  </p>
+  <p>
+    <%= f.label :settling_with_power, '11. Settling with Power' %>
+    <%= f.select :settling_with_power, ['S', 'U', 'N/A']%>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
